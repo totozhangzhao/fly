@@ -1,0 +1,770 @@
+body,html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Microsoft Yahei';
+  font-size: 16px;
+  background: #FFF;
+  color: #666;
+}
+input,
+button {
+  outline: none;
+  border: none 0;
+}
+button {
+  background: none;
+}
+.error-tip {
+  display: none;
+}
+.error-tip.active {
+  display: block;
+}
+.color-a {
+  color: blue;
+}
+.bold-tit {
+  font-weight: bold;
+}
+.info-box, 
+.active-box, 
+.order-box,
+.integral-box,
+.exchange-record-box,
+.integral-list-box,
+.pay-box {
+  max-width: 750px;
+  margin: 0 auto;
+  min-height: 100%;
+  position: relative;
+}
+.tit-bar {
+  font-size: 14px;
+  line-height: 40px;
+}
+.tit-bar a {
+  color: #666;
+}
+.info-record-bar a {
+  padding-right: 10px;
+}
+.record-icon {
+  width: 9px; 
+  height: 11.5px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 3px;
+  margin-top: -4px;
+  background: url(http://cdn.rsscc.cn/guanggao/img/mall/icon/ex-icon.png) no-repeat;
+  background-size: cover;
+}
+.cur-bar {
+  width: 44%;
+  margin-left: 10px;
+  /*text-align: center;*/
+}
+
+.num-font {
+  font-family: 'Arial';
+}
+.num-color {
+  font-family: 'Arial';
+  font-size: 16px;
+  color: #f90;
+}
+/*.sign-bar {
+  width: 28%;
+}*/
+/*.sign-bar a {
+  padding-right: 10px;
+}*/
+.sign-icon {
+  width: 12px; 
+  height: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 3px;
+  margin-top: -4px;
+  background: url(http://cdn.rsscc.cn/guanggao/img/mall/icon/sign-icon.png) no-repeat;
+  background-size: cover;
+}
+.banner-bar {
+  width: 100%;
+}
+.banner-pic img {
+  width: 100%;
+}
+.goods-bar {
+  padding-bottom: 211px;
+}
+
+.goods-copyright-fix {
+  padding-bottom: 61px;
+}
+.goods-area {
+  border-bottom: 1px solid #f3f3f3;
+}
+.goods-h {
+ font-size: 16px;
+ height:34px;
+ line-height:34px;
+ padding-left: 10px;
+ background: #f3f3f3;
+}
+.hot-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 3px;
+  margin-top: -4px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(http://cdn.rsscc.cn/guanggao/img/mall/icon/hot.png) no-repeat;
+  background-size: cover;
+}
+.goods-area-son {
+  width: 50%;
+  border-right: 1px solid #f3f3f3;
+  border-bottom: 1px solid #f3f3f3;
+  margin-left: -1px;
+  margin-bottom: -1px;
+}
+.text-bar {
+  width: 100%;
+  padding-top: 6px;
+  color: #333;
+}
+.text-bar-p {
+  width: 148px;
+  height: 16px;
+  line-height: 16px;
+  padding-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.pic-value {
+  font-size: 12px;
+  line-height: 14px;
+} 
+.pic-detail {
+  height: 16px;
+  line-height: 16px;
+  font-size: 12px;
+  margin:2px 0;
+  color: #999;
+}
+/*.for-free {
+  width: 40px;
+  text-align: center;
+  color: #fff;
+  margin-left: 10px;
+  background: #f00;
+}*/
+.state-icon {
+  margin-left: 8px;
+  margin-top: -3px;
+  display:inline-block;
+  vertical-align: middle;
+}
+.state-limit {
+  width: 29px;
+  height: 14px;
+  background: url(http://cdn.rsscc.cn/guanggao/img/mall/icon/limit-icon.png) no-repeat;
+  background-size: cover;
+}
+.state-out {
+  width: 29px;
+  height: 14px;
+  background: url(http://cdn.rsscc.cn/guanggao/img/mall/icon/out-icon.png) no-repeat;
+  background-size: cover;
+}
+.state-prize {
+  width: 29px;
+  height: 14px;
+  background: url(http://cdn.rsscc.cn/guanggao/img/mall/icon/prize-icon.png) no-repeat;
+  background-size: cover;
+}
+.state-grab {
+  width: 29px;
+  height: 14px;
+  background: url(http://cdn.rsscc.cn/guanggao/img/mall/icon/state-grab.png) no-repeat;
+  background-size: cover;
+}
+.new-user {
+  width: 33.5px;
+  height: 14px;
+  background: url(http://cdn.rsscc.cn/guanggao/img/mall/icon/new-user.png) no-repeat;
+  background-size: cover;
+}
+.old-user {
+  width: 33.5px;
+  height: 14px;
+  background: url(http://cdn.rsscc.cn/guanggao/img/mall/icon/old-user.png) no-repeat;
+  background-size: cover;
+}
+.month-card {
+  width: 29px;
+  height: 14px;
+  background: url(http://cdn.rsscc.cn/guanggao/img/mall/icon/month-card.png) no-repeat;
+  background-size: cover;
+}
+.quarter-card {
+  width: 29px;
+  height: 14px;
+  background: url(http://cdn.rsscc.cn/guanggao/img/mall/icon/quarter-card.png) no-repeat;
+  background-size: cover;
+}
+.user-v1 {
+  width: 40px;
+  height: 14px;
+  background: url(http://cdn.rsscc.cn/guanggao/img/mall/icon/user-v1.png) no-repeat;
+  background-size: cover;
+}
+.user-v2 {
+  width: 40px;
+  height: 14px;
+  background: url(http://cdn.rsscc.cn/guanggao/img/mall/icon/user-v2.png) no-repeat;
+  background-size: cover;
+}
+.user-v3 {
+  width: 40px;
+  height: 14px;
+  background: url(http://cdn.rsscc.cn/guanggao/img/mall/icon/user-v3.png) no-repeat;
+  background-size: cover;
+}
+.user-v4 {
+  width: 40px;
+  height: 14px;
+  background: url(http://cdn.rsscc.cn/guanggao/img/mall/icon/user-v4.png) no-repeat;
+  background-size: cover;
+}
+.user-v5 {
+  width: 40px;
+  height: 14px;
+  background: url(http://cdn.rsscc.cn/guanggao/img/mall/icon/user-v5.png) no-repeat;
+  background-size: cover;
+}
+.user-v6 {
+  width: 40px;
+  height: 14px;
+  background: url(http://cdn.rsscc.cn/guanggao/img/mall/icon/user-v6.png) no-repeat;
+  background-size: cover;
+}
+.user-v7 {
+  width: 40px;
+  height: 14px;
+  background: url(http://cdn.rsscc.cn/guanggao/img/mall/icon/user-v7.png) no-repeat;
+  background-size: cover;
+}
+.user-v8 {
+  width: 40px;
+  height: 14px;
+  background: url(http://cdn.rsscc.cn/guanggao/img/mall/icon/user-v8.png) no-repeat;
+  background-size: cover;
+}
+.pic-tit {
+  font-size: 14px;
+}
+.pic-bar {
+  padding: 8px 0;
+}
+.goods-pic {
+  width: 103px;
+  height: 66px;
+  margin: 0 auto;
+}
+.copyright-block {
+  width: 100%;
+  height: 211px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.copyright-bar {
+  background: #f3f3f3;
+  width: 100%;
+  height: 100%;
+  line-height: 30px;
+  text-align: center;
+  color: #999;
+  font-size: 10px;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+.filed-box {
+  width: 200px; 
+  font-size: 14px;
+  margin: 0 auto; 
+  text-align: center; 
+  border-top: 1px solid #ccc;
+}
+.filed-text {
+  width: 266px;
+  margin: 5px auto; 
+  padding: 5px 10px; 
+  line-height: 22px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.group-name {
+  font-family: 'Arial';
+}
+
+/* goods-detail start */
+
+p {
+  word-break: break-all;
+}
+.active-pic-bar img {
+  width: 100%;
+}
+.active-bar {
+  padding-bottom: 272px;
+}
+.active-area {
+  padding: 12px 16px 5px;
+}
+.active-detail-tit {
+  height: 16px;
+  line-height: 16px;
+  border-left: 4px solid #e40031;
+  margin: 4px 0;
+  padding-left: 4px;
+  color: #333;
+}
+.address-tit {
+  width: 100%;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 2px 0;
+}
+.address-tit-son {
+  color: #fff;
+  background: #4889db;
+  height: 18px;
+  line-height: 18px;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+.text-red {
+  color: #f00;
+}
+.border-color {
+  border-color: #4889db;  
+}
+.common-text {
+  font-size: 14px;
+  line-height: 20px;
+}
+.time-bar {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background: #f3f3f3;
+  border-top: 1px solid #d1d1d1;
+  position: fixed;
+  left: 0;
+  bottom: 0; 
+}
+.time-area {
+  height: 100%;
+}
+/*.time-area {
+  padding: 12px 0;
+}*/
+.scoring-bar {
+  margin-left: 12px;
+}
+.user-flow {
+  width: 210px;
+  margin: 10px auto;
+}
+.count-down {
+  margin-right: 10px;
+}
+.operate-btn {
+  padding: 10px 15px;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 3px;
+  margin-right: 20px;
+  margin-top: 12px;
+  color: #fff;
+}
+.allow-color {
+  background: #4889db;
+}
+.forbidden-color {
+  background: #ccc;
+}
+.scoring-num {
+  font-family: 'Arial';
+  font-size: 22px;
+  color: #f90;
+}
+.time-num {
+  width: 20px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 5px;
+  margin:0 2px;
+  background: #ccc;
+  color: #FFF;
+  display: inline-block;
+}
+/*.detail-copyright-bar {
+  bottom: 61px;
+}*/
+.common-shadow {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  display: none;
+}
+.flip-box, 
+.login-flip-box {
+  width: 80%;
+  height: 150px;
+  text-align: center;
+  background: #fff;
+  border-radius: 4px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -40%;
+  margin-top: -75px;
+  z-index: 6;
+  display: none;
+}
+.login-flip-h {
+  font-size: 18px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  text-align: center;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  background: #4889db;
+}
+.login-flip-text {
+  padding: 15px;
+}
+.login-flip-text-no {
+  text-align: center;
+  padding: 25px 15px;
+}
+.login-btn-box {
+  text-align: center;
+}
+.login-no,
+.login-yes {
+  min-width: 100px;
+  padding: 5px 18px;
+  color: #fff;
+  margin: 0 8px;
+  border-radius: 2px;
+}
+.flip-info {
+  margin-top: 30px;
+}
+.exchange-button {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 4px 12px;
+  margin: 40px 10px;
+  color: #fff;
+}
+.flip-tip {
+  font-size: 12px;
+  padding: 0 16px;
+}
+.flip-go-check {
+  margin-top: 15px;
+}
+.integral-list-num {
+  padding-top: 30px;
+  height: 24px;
+  color: #4889db;
+}
+.group-introduce {
+  padding-top: 20px;
+  padding-bottom: 5px;
+} 
+.group-introduce-bar {
+  margin-top: 20px;
+}
+/* goods-detail end */
+
+/* order-detail start */
+
+.order-nav {
+  font-size: 12px;
+  padding: 0 10px;
+  height: 40px;
+  line-height: 40px;
+  background: #f3f3f3;
+}
+.order-goods-box {
+  padding-bottom: 231px;
+}
+.order-goods-bar {
+  padding: 10px 10px 0;
+  height: 75px;
+  border-bottom: 1px solid #f3f3f3;
+}
+.chit-pic {
+  width: 64px;
+  height: 64px;
+  border-radius: 4px;
+}
+.order-goods-text {
+  padding-left: 71px;
+}
+.actually-pay {
+  font-size: 14px;
+  text-align: right;
+}
+.exchange-code-bar {
+  padding: 12px 10px;
+  border-bottom: 1px solid #f3f3f3;
+  position: relative;
+}
+.exchange-code {
+  text-align: center;
+  font-size: 18px;
+  padding: 8px 10px;
+  color: #fff;
+}
+.exchange-code-word {
+  background: #feb220;
+  padding: 10px;
+  border-radius: 3px; 
+  display: inline-block;
+}
+.copy-code {
+  font-size: 10px;
+  color: #ccc;
+  text-align: center;
+}
+.use-method {
+  padding: 0 10px;
+  color: #333;
+}
+.use-method-tit {
+  margin-top: 10px;
+} 
+.use-method-text {
+  font-size: 14px;
+}
+
+/* order-detail end */
+
+/* integral-rule start */
+
+/*.integral-box-son {
+  padding-bottom: 232px;
+}
+*/
+.integral-bar {
+  color: #333;
+  padding: 0 10px;
+}
+.question-bar {
+  line-height: 36px;
+}
+.question-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+  display: inline-block;
+  background: url(http://cdn.rsscc.cn/guanggao/img/mall/icon/question-icon.png) no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+}
+.answer-icon {
+  width: 16px;
+  height: 16px;
+  margin-top: 6px;
+  display: inline-block;
+  background: url(http://cdn.rsscc.cn/guanggao/img/mall/icon/answer-icon.png) no-repeat;
+  background-size: cover;
+}
+.answer-text {
+  font-size: 14px;
+  padding-left: 28px;
+  line-height: 28px;
+}
+
+/* integral-rule end */
+
+/* exchange-record start */
+
+.record-area,
+.integral-list-area {
+  height: 84px;
+  padding: 0 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: -1px;
+}
+.record-pic-bar,
+.list-pic-bar {
+  margin-top: 10px;
+}
+.record-text-bar,
+.list-text-bar {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.record-text-det, .record-text-time {
+  font-size: 14px; 
+  line-height: 20px;
+}
+.record-need-integral {
+  margin-top: 10px;
+  margin-right: 35px;
+}
+.record-text-time {
+  color: #999;
+}
+
+.enter-btn {
+  width: 9px;
+  height: 18px;
+  margin-top: 28px;
+  background: url(http://cdn.rsscc.cn/guanggao/img/mall/icon/arrow-icon.png) no-repeat;
+  background-size: cover;
+}
+.exchange-empty-box {
+  max-width: 750px;
+  margin: 0 auto;
+  display: none;
+}
+.exchange-empty-pic {
+  width: 104px;
+  height: 104px;
+  margin: 128px auto 36px;
+}
+.exchange-empty-text {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+/* exchange-record end */
+
+/* pay-heshidai start */
+
+.insert-bar {
+  width: 90%;
+  margin: 24px auto 0;
+}
+.pay-box {
+  background: #f3f3f3;
+}
+.pay-pic-bar img {
+  width: 100%;
+}
+.insert-bar-son {
+  height: 72px;
+}
+.authcode-insert-bar {
+  height: 68px;
+}
+.insert-bar-son .common-text {
+  font-size: 12px;
+  height: 26px;
+  line-height: 26px;
+}
+.common-insert-area,
+.authcode-insert-area {
+  height: 30px;
+  padding: 8px 0;
+  background: #fff;
+  border-radius: 4px;
+}
+.authcode-insert-area {
+  padding: 6px 0;
+}
+.authcode-insert-area  {
+  width: 56%;
+}
+.authcode-get-area {
+  width: 40%;
+}
+.authcode-get {
+  width: 100%;
+  height: 42px;
+  text-align: center;
+  line-height: 42px;
+  border-radius: 4px;
+}
+.insert-icon {
+  width: 15px;
+  height: 30px;
+  vertical-align: middle;
+  margin: 0 15px;
+  display: inline-block;
+  background: url(http://cdn.rsscc.cn/guanggao/img/mall/icon/insert-icon.png) no-repeat 0 4px;
+  background-size: 51px 21px;
+}
+.psw-icon {
+  background-position: -18px 2px;
+}
+.re-psw-icon {
+  background-position: -36px 2px;
+}
+.common-insert {
+  width: 70%;
+  padding: 7px 0 7px 10px ;
+  height:16px;
+  line-height: 16px;
+  border-left: 1px solid #ccc;
+  border-radius: 0;
+}
+.authcode-insert {
+  width: 70%;
+  height: 16px;
+  line-height: 16px;
+  padding: 7px 0 7px 25px;
+}
+.insert-tit {
+  padding-left: 55px;
+}
+.insert-bar-son .authcode-tit {
+  padding-left: 25px;
+}
+.disable-color {
+  background: #ccc;
+}
+.able-color, .authcode-get.active {
+  background: #feb220;
+
+}
+.authcode-get {
+  background: #ccc;
+  color: #999;
+}
+.authcode-get.active {
+  color: #fff;
+}
+.to-receive-bar {
+  padding-bottom: 40px;
+}
+.to-receive {
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  border-radius: 4px;
+  color: #fff;
+  background: #feb220;
+}
+
+/* pay-heshidai end */
